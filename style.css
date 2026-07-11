@@ -1060,3 +1060,217 @@ footer{
 }
 
 }
+
+/* ==========================================
+   CALCULATOR BUTTON GRID
+========================================== */
+
+.buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.buttons button{
+
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:var(--oxford);
+
+    transition:.3s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+/* Hover Effect */
+
+.buttons button:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--lightBlue);
+
+    color:white;
+
+}
+
+/* ==========================================
+   OPERATOR BUTTONS
+========================================== */
+
+.operator{
+
+    background:var(--blue) !important;
+
+    color:white !important;
+
+}
+
+.operator:hover{
+
+    background:var(--oxford) !important;
+
+}
+
+/* ==========================================
+   EQUALS BUTTON
+========================================== */
+
+.equals{
+
+    background:var(--lightBlue) !important;
+
+    color:white !important;
+
+    font-size:28px;
+
+}
+
+.equals:hover{
+
+    background:var(--blue) !important;
+
+}
+
+/* ==========================================
+   OPERATIONS SECTION
+========================================== */
+
+.operations{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.operations h2{
+
+    font-size:40px;
+
+    color:var(--oxford);
+
+    margin-bottom:15px;
+
+}
+
+.operation-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+/* ==========================================
+   OPERATION CARDS
+========================================== */
+
+.operation-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--blue);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.operation-card:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--blue);
+
+    color:white;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.calculator{
+
+    width:100%;
+
+    padding:25px;
+
+}
+
+.buttons button{
+
+    height:55px;
+
+    font-size:18px;
+
+}
+
+#display{
+
+    height:70px;
+
+    font-size:24px;
+
+}
+
+.calculator-hero h1{
+
+    font-size:42px;
+
+}
+
+.calculator-hero p{
+
+    font-size:16px;
+
+}
+
+.operations h2{
+
+    font-size:32px;
+
+}
+
+}
