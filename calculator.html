@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math Hub | Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo">
+
+            <h2>Math Hub</h2>
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="calculator.html" class="active">Calculator</a></li>
+
+            <li><a href="formulas.html">Formulas</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="calculator-hero">
+
+    <h1>🧮 Scientific Calculator</h1>
+
+    <p>
+
+        Solve mathematical expressions instantly using
+        basic operations, percentages, square roots,
+        exponents, and parentheses.
+
+    </p>
+
+</section>
+
+<!-- ================= CALCULATOR ================= -->
+
+<section class="calculator-section">
+
+    <div class="calculator">
+
+        <input
+            type="text"
+            id="display"
+            placeholder="Enter Expression"
+            readonly>
+
+        <div class="buttons">
+
+            <button onclick="clearDisplay()" class="operator">AC</button>
+
+            <button onclick="appendValue('(')">(</button>
+
+            <button onclick="appendValue(')')">)</button>
+
+            <button onclick="appendValue('/')">÷</button>
+
+            <button onclick="appendValue('7')">7</button>
+
+            <button onclick="appendValue('8')">8</button>
+
+            <button onclick="appendValue('9')">9</button>
+
+            <button onclick="appendValue('*')">×</button>
+
+            <button onclick="appendValue('4')">4</button>
+
+            <button onclick="appendValue('5')">5</button>
+
+            <button onclick="appendValue('6')">6</button>
+
+            <button onclick="appendValue('-')">−</button>
+
+            <button onclick="appendValue('1')">1</button>
+
+            <button onclick="appendValue('2')">2</button>
+
+            <button onclick="appendValue('3')">3</button>
+
+            <button onclick="appendValue('+')">+</button>
+
+            <button onclick="appendValue('0')">0</button>
+
+            <button onclick="appendValue('.')">.</button>
+
+            <button onclick="appendPercent()">%</button>
+
+            <button onclick="calculate()" class="equals">=</button>
+
+            <button onclick="squareRoot()">√</button>
+
+            <button onclick="appendValue('**')">xʸ</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="operations">
+
+    <h2>Supported Operations</h2>
+
+    <div class="operation-grid">
+
+        <div class="operation-card">➕ Addition</div>
+
+        <div class="operation-card">➖ Subtraction</div>
+
+        <div class="operation-card">✖ Multiplication</div>
+
+        <div class="operation-card">➗ Division</div>
+
+        <div class="operation-card">％ Percentage</div>
+
+        <div class="operation-card">√ Square Root</div>
+
+        <div class="operation-card">xʸ Exponents</div>
+
+        <div class="operation-card">( ) Parentheses</div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Math Hub • Designed for Educational Purposes</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
