@@ -1,1 +1,414 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   COLOR PALETTE
+========================================== */
+
+:root{
+
+    --oxford:#192338;
+    --cadet:#1E2E4F;
+    --blue:#31487A;
+    --lightBlue:#8FB3E2;
+    --lavender:#D9E1F1;
+    --white:#FFFFFF;
+
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--lavender);
+    color:var(--oxford);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    max-width:1250px;
+
+    z-index:1000;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav{
+
+    background:rgba(25,35,56,.95);
+
+    backdrop-filter:blur(15px);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+}
+
+.logo h2{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   NAV MENU
+========================================== */
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+/* Underline Animation */
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:3px;
+
+    left:0;
+
+    bottom:-6px;
+
+    background:var(--lightBlue);
+
+    transition:.35s;
+
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--lightBlue);
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:150px auto 100px;
+
+    background:linear-gradient(
+        135deg,
+        #D9E1F1,
+        #8FB3E2
+    );
+
+    border-radius:35px;
+
+    padding:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+/* ==========================================
+   HERO TEXT
+========================================== */
+
+.hero-text{
+
+    flex:1;
+
+    z-index:2;
+
+}
+
+.tag{
+
+    background:rgba(255,255,255,.55);
+
+    color:var(--blue);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.hero-text h1{
+
+    font-size:64px;
+
+    margin:25px 0;
+
+    color:var(--oxford);
+
+    line-height:1.15;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--cadet);
+
+    max-width:560px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.btn-primary{
+
+    background:var(--blue);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--oxford);
+
+    transform:translateY(-5px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--blue);
+
+    color:var(--blue);
+
+    text-decoration:none;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--blue);
+
+    color:white;
+
+}
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:470px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   FLOATING MATH SYMBOLS
+========================================== */
+
+.math-symbol{
+
+    position:absolute;
+
+    font-weight:700;
+
+    opacity:.12;
+
+    color:var(--blue);
+
+    user-select:none;
+
+}
+
+.symbol1{
+
+    font-size:90px;
+
+    top:35px;
+
+    right:120px;
+
+}
+
+.symbol2{
+
+    font-size:80px;
+
+    left:60px;
+
+    bottom:70px;
+
+}
+
+.symbol3{
+
+    font-size:70px;
+
+    bottom:30px;
+
+    right:320px;
+
+}
+
+.symbol4{
+
+    font-size:75px;
+
+    top:100px;
+
+    left:48%;
+
+}
