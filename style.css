@@ -622,3 +622,327 @@ footer p{
     opacity:.9;
 
 }
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+/* Floating Hero Image */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Floating Math Symbols */
+
+@keyframes symbolFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.symbol1{
+
+    animation:symbolFloat 6s ease-in-out infinite;
+
+}
+
+.symbol2{
+
+    animation:symbolFloat 5s ease-in-out infinite;
+
+}
+
+.symbol3{
+
+    animation:symbolFloat 7s ease-in-out infinite;
+
+}
+
+.symbol4{
+
+    animation:symbolFloat 4s ease-in-out infinite;
+
+}
+
+/* Fade In */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.features{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.quote{
+
+    animation:fadeUp 1.4s ease;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#D9E1F1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#31487A;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#192338;
+
+}
+
+/* ==========================================
+   TEXT SELECTION
+========================================== */
+
+::selection{
+
+    background:#31487A;
+
+    color:white;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1000px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+}
+
+.hero-text p{
+
+    margin:auto;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-image{
+
+    margin-top:40px;
+
+}
+
+.hero-image img{
+
+    max-width:360px;
+
+}
+
+.symbol1,
+.symbol2,
+.symbol3,
+.symbol4{
+
+    display:none;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.hero{
+
+    margin-top:170px;
+
+}
+
+.hero-text h1{
+
+    font-size:46px;
+
+}
+
+.features h2{
+
+    font-size:34px;
+
+}
+
+.quote h2{
+
+    font-size:26px;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:500px){
+
+.hero{
+
+    padding:40px 25px;
+
+}
+
+.hero-text h1{
+
+    font-size:34px;
+
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.features{
+
+    margin:80px auto;
+
+}
+
+.quote{
+
+    padding:50px 25px;
+
+}
+
+.quote h2{
+
+    font-size:22px;
+
+}
+
+footer{
+
+    padding:20px;
+
+}
+
+}
