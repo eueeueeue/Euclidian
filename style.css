@@ -1,1 +1,277 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F8FAFC;
+    color:#1F2937;
+    line-height:1.6;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    background:#0F172A;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(15,23,42,.15);
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:cover;
+}
+
+.logo h2{
+    color:#FFFFFF;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+}
+
+nav ul li a{
+    color:#FFFFFF;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#60A5FA;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:56px;
+    color:#0F172A;
+    margin-bottom:15px;
+}
+
+.hero-content span{
+    color:#2563EB;
+}
+
+.tagline{
+    color:#2563EB;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#0F172A;
+    color:#FFFFFF;
+    padding:14px 32px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.btn:hover{
+    background:#1E293B;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   HERO IMAGE
+========================== */
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:450px;
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.features h2{
+    text-align:center;
+    font-size:38px;
+    color:#0F172A;
+    margin-bottom:45px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:#FFFFFF;
+    border:1px solid #E2E8F0;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.3s ease;
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563EB;
+    box-shadow:0 15px 35px rgba(37,99,235,.15);
+}
+
+.feature-card h3{
+    color:#0F172A;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#64748B;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    margin-top:80px;
+    background:#0F172A;
+    color:#FFFFFF;
+    text-align:center;
+    padding:20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-image img{
+        max-width:320px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    nav ul{
+        gap:16px;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .features h2{
+        font-size:30px;
+    }
+
+}
