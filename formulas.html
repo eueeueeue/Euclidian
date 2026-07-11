@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math Hub | Formula Center</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo">
+
+            <h2>Math Hub</h2>
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="calculator.html">Calculator</a></li>
+
+            <li><a href="formulas.html" class="active">Formulas</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="formula-hero">
+
+    <h1>📚 Formula Center</h1>
+
+    <p>
+
+        Explore geometry formulas and solve problems instantly.
+        Select a category below to begin.
+
+    </p>
+
+</section>
+
+<!--================ QUICK NAVIGATION ================-->
+
+<section class="formula-navigation">
+
+    <a href="#circle">⭕ Circle</a>
+
+    <a href="#area">📐 Area</a>
+
+    <a href="#volume">📦 Volume</a>
+
+    <a href="#perimeter">📏 Perimeter</a>
+
+</section>
+
+<!--================ CIRCLE SECTION ================-->
+
+<section id="circle" class="formula-section">
+
+    <h2>⭕ Circle Calculators</h2>
+
+    <p class="section-description">
+
+        Solve formulas related to circles.
+
+    </p>
+
+    <div class="formula-grid">
+
+        <!-- Diameter -->
+
+        <div class="formula-card">
+
+            <h3>Diameter</h3>
+
+            <p><strong>Formula:</strong> d = 2r</p>
+
+            <input type="number" id="diameterRadius" placeholder="Enter Radius">
+
+            <button onclick="calculateDiameter()">Solve</button>
+
+            <div class="output" id="diameterOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Radius -->
+
+        <div class="formula-card">
+
+            <h3>Radius</h3>
+
+            <p><strong>Formula:</strong> r = d ÷ 2</p>
+
+            <input type="number" id="radiusDiameter" placeholder="Enter Diameter">
+
+            <button onclick="calculateRadius()">Solve</button>
+
+            <div class="output" id="radiusOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Circumference -->
+
+        <div class="formula-card">
+
+            <h3>Circumference</h3>
+
+            <p><strong>Formula:</strong> C = 2πr</p>
+
+            <input type="number" id="circumferenceRadius" placeholder="Enter Radius">
+
+            <button onclick="calculateCircumference()">Solve</button>
+
+            <div class="output" id="circumferenceOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- AREA SECTION -->
+<!-- We'll add this next -->
+
+<!-- VOLUME SECTION -->
+<!-- We'll add this next -->
+
+<!-- PERIMETER SECTION -->
+<!-- We'll add this next -->
+
+<footer>
+
+    <p>
+
+        © 2026 Math Hub • Designed for Educational Purposes
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
