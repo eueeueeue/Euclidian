@@ -412,3 +412,213 @@ nav ul li a:hover{
     left:48%;
 
 }
+/* ==========================================
+   FEATURES SECTION
+========================================== */
+
+.features{
+
+    width:90%;
+    max-width:1250px;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.features h2{
+
+    font-size:46px;
+
+    color:var(--oxford);
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.section-description{
+
+    color:var(--cadet);
+
+    font-size:18px;
+
+    margin-bottom:60px;
+
+}
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+/* ==========================================
+   INDIVIDUAL CARD
+========================================== */
+
+.card{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border:1px solid rgba(255,255,255,.6);
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 45px rgba(49,72,122,.25);
+
+    background:white;
+
+}
+
+/* ==========================================
+   CARD ICON
+========================================== */
+
+.emoji{
+
+    font-size:65px;
+
+    margin-bottom:25px;
+
+    transition:.4s;
+
+}
+
+.card:hover .emoji{
+
+    transform:scale(1.15) rotate(-5deg);
+
+}
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.card h3{
+
+    color:var(--oxford);
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+/* ==========================================
+   CARD DESCRIPTION
+========================================== */
+
+.card p{
+
+    color:var(--cadet);
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   QUOTE SECTION
+========================================== */
+
+.quote{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:100px auto;
+
+    background:linear-gradient(
+        135deg,
+        var(--blue),
+        var(--cadet)
+    );
+
+    border-radius:30px;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.quote h2{
+
+    font-size:34px;
+
+    font-weight:600;
+
+    line-height:1.7;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    margin-top:120px;
+
+    background:var(--oxford);
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    opacity:.9;
+
+}
