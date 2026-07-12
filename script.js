@@ -470,3 +470,48 @@ function topFunction() {
     });
 
 }
+
+/*==================================
+        CUSTOM CURSOR
+==================================*/
+
+const cursor = document.querySelector(".cursor");
+const outline = document.querySelector(".cursor-outline");
+
+document.addEventListener("mousemove", function(e){
+
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+    outline.style.left = e.clientX + "px";
+    outline.style.top = e.clientY + "px";
+
+});
+
+/* Hover Animation */
+
+const hoverItems = document.querySelectorAll(
+"a, button, .feature-card, .glass-card, .profile-card, .stat-card"
+);
+
+hoverItems.forEach(item=>{
+
+    item.addEventListener("mouseenter",()=>{
+
+        cursor.style.transform="translate(-50%,-50%) scale(1.8)";
+        outline.style.width="60px";
+        outline.style.height="60px";
+        outline.style.borderColor="#8FB3E2";
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+
+        cursor.style.transform="translate(-50%,-50%) scale(1)";
+        outline.style.width="42px";
+        outline.style.height="42px";
+        outline.style.borderColor="#31487A";
+
+    });
+
+});
