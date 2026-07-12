@@ -3,27 +3,28 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <title>Math Hub | Formulas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Math Hub | Formula Calculator Hub</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<!--================ NAVBAR ================-->
+<!--================ NAVIGATION ================-->
 
 <header>
 
@@ -31,7 +32,7 @@
 
 <div class="logo">
 
-<img src="img/logo.png" alt="Logo">
+<img src="img/logo.png">
 
 <h2>Math Hub</h2>
 
@@ -57,69 +58,33 @@
 
 <section class="formula-hero">
 
-<h4>MATHEMATICAL FORMULAS</h4>
+<h4>MATHEMATICS</h4>
 
-<h1>Formula Explorer</h1>
+<h1>Formula Calculator Hub</h1>
 
 <p>
 
-Learn, calculate, and understand mathematical formulas through interactive tools.
+Quickly calculate perimeter, area, circumference, diameter, and volume using interactive formula cards.
 
 </p>
 
 </section>
 
-<!--================ FORMULA GRID ================-->
+<!--================ PERIMETER ================-->
 
-<section class="formula-grid">
+<section class="formula-container">
 
-<!--================ 2D TITLE ================-->
+<div class="formula-heading">
 
-<div class="formula-section-title">
+<i class="fa-solid fa-ruler-combined"></i>
 
-<i class="fa-solid fa-draw-polygon"></i>
-
-<h2>2D Shapes</h2>
+<h2>Perimeter</h2>
 
 </div>
 
-<!--================ CIRCLE ================-->
+<div class="formula-grid">
 
-<div class="formula-card">
-
-<div class="formula-icon">
-
-<i class="fa-regular fa-circle"></i>
-
-</div>
-
-<h2>Circle</h2>
-
-<h3>A = πr²</h3>
-
-<p>Enter the radius.</p>
-
-<input
-type="number"
-id="circleRadius"
-placeholder="Radius">
-
-<button onclick="calculateCircleArea()">
-
-Calculate
-
-</button>
-
-<div class="result"
-id="circleResult">
-
-Result:
-
-</div>
-
-</div>
-
-<!--================ SQUARE ================-->
+<!-- Square -->
 
 <div class="formula-card">
 
@@ -129,242 +94,657 @@ Result:
 
 </div>
 
-<h2>Square</h2>
+<h3>Square</h3>
 
-<h3>A = s²</h3>
-
-<p>Enter the side length.</p>
+<p>P = 4s</p>
 
 <input
 type="number"
-id="squareSide"
-placeholder="Side Length">
+placeholder="Side Length"
+id="squarePerimeter">
 
-<button onclick="calculateSquareArea()">
+<button onclick="squarePerimeter()">
 
 Calculate
 
 </button>
 
-<div class="result"
-id="squareResult">
+<div
+class="result"
+id="squarePerimeterResult">
 
-Result:
+Result
 
 </div>
-<!--================ RECTANGLE ================-->
+
+</div>
+
+<!-- Rectangle -->
 
 <div class="formula-card">
 
-    <div class="formula-icon">
+<div class="formula-icon">
 
-        <i class="fa-regular fa-window-maximize"></i>
-
-    </div>
-
-    <h2>Rectangle</h2>
-
-    <h3>A = l × w</h3>
-
-    <p>Enter the length and width.</p>
-
-    <input
-    type="number"
-    id="rectangleLength"
-    placeholder="Length">
-
-    <input
-    type="number"
-    id="rectangleWidth"
-    placeholder="Width">
-
-    <button onclick="calculateRectangleArea()">
-
-        Calculate
-
-    </button>
-
-    <div
-    class="result"
-    id="rectangleResult">
-
-        Result:
-
-    </div>
+<i class="fa-regular fa-window-maximize"></i>
 
 </div>
 
-<!--================ TRIANGLE ================-->
+<h3>Rectangle</h3>
+
+<p>P = 2(l+w)</p>
+
+<input
+type="number"
+placeholder="Length"
+id="rectangleLengthP">
+
+<input
+type="number"
+placeholder="Width"
+id="rectangleWidthP">
+
+<button onclick="rectanglePerimeter()">
+
+Calculate
+
+</button>
+
+<div
+class="result"
+id="rectanglePerimeterResult">
+
+Result
+
+</div>
+
+</div>
+
+<!-- Triangle -->
 
 <div class="formula-card">
 
-    <div class="formula-icon">
+<div class="formula-icon">
 
-        <i class="fa-solid fa-play fa-rotate-270"></i>
-
-    </div>
-
-    <h2>Triangle</h2>
-
-    <h3>A = ½ × b × h</h3>
-
-    <p>Enter the base and height.</p>
-
-    <input
-    type="number"
-    id="triangleBase"
-    placeholder="Base">
-
-    <input
-    type="number"
-    id="triangleHeight"
-    placeholder="Height">
-
-    <button onclick="calculateTriangleArea()">
-
-        Calculate
-
-    </button>
-
-    <div
-    class="result"
-    id="triangleResult">
-
-        Result:
-
-    </div>
+<i class="fa-solid fa-play fa-rotate-270"></i>
 
 </div>
 
-<!--================ 3D SHAPES TITLE ================-->
+<h3>Triangle</h3>
 
-<div class="formula-section-title">
+<p>P = a+b+c</p>
 
-    <i class="fa-solid fa-cubes"></i>
+<input
+type="number"
+placeholder="Side A"
+id="triangleA">
 
-    <h2>3D Shapes</h2>
+<input
+type="number"
+placeholder="Side B"
+id="triangleB">
 
-</div>
+<input
+type="number"
+placeholder="Side C"
+id="triangleC">
 
-<!--================ CUBE ================-->
+<button onclick="trianglePerimeter()">
 
-<div class="formula-card">
+Calculate
 
-    <div class="formula-icon">
+</button>
 
-        <i class="fa-solid fa-cube"></i>
+<div
+class="result"
+id="trianglePerimeterResult">
 
-    </div>
-
-    <h2>Cube</h2>
-
-    <h3>V = s³</h3>
-
-    <p>Enter the side length.</p>
-
-    <input
-    type="number"
-    id="cubeSide"
-    placeholder="Side Length">
-
-    <button onclick="calculateCubeVolume()">
-
-        Calculate
-
-    </button>
-
-    <div
-    class="result"
-    id="cubeResult">
-
-        Result:
-
-    </div>
+Result
 
 </div>
 
-<!--================ CYLINDER ================-->
-
-<div class="formula-card">
-
-    <div class="formula-icon">
-
-        <i class="fa-solid fa-database"></i>
-
-    </div>
-
-    <h2>Cylinder</h2>
-
-    <h3>V = πr²h</h3>
-
-    <p>Enter the radius and height.</p>
-
-    <input
-    type="number"
-    id="cylinderRadius"
-    placeholder="Radius">
-
-    <input
-    type="number"
-    id="cylinderHeight"
-    placeholder="Height">
-
-    <button onclick="calculateCylinderVolume()">
-
-        Calculate
-
-    </button>
-
-    <div
-    class="result"
-    id="cylinderResult">
-
-        Result:
-    </div>
 </div>
-
-<!--================ SPHERE ================-->
-
-<div class="formula-card">
-
-    <div class="formula-icon">
-
-        <i class="fa-solid fa-globe"></i>
-
-    </div>
-
-    <h2>Sphere</h2>
-
-    <h3>V = ⁴⁄₃πr³</h3>
-
-    <p>Enter the radius.</p>
-
-    <input
-    type="number"
-    id="sphereRadius"
-    placeholder="Radius">
-
-    <button onclick="calculateSphereVolume()">
-
-        Calculate
-
-    </button>
-
-    <div
-    class="result"
-    id="sphereResult">
-
-        Result:
-
-    </div>
 
 </div>
 
 </section>
+
+<!--================ AREA ================-->
+
+<section class="formula-container">
+
+    <div class="formula-heading">
+
+        <i class="fa-solid fa-vector-square"></i>
+
+        <h2>Area</h2>
+
+    </div>
+
+    <div class="formula-grid">
+
+        <!-- Square -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-regular fa-square"></i>
+
+            </div>
+
+            <h3>Square</h3>
+
+            <p>A = s²</p>
+
+            <input
+            type="number"
+            id="squareArea"
+            placeholder="Side Length">
+
+            <button onclick="squareArea()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="squareAreaResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Rectangle -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-regular fa-window-maximize"></i>
+
+            </div>
+
+            <h3>Rectangle</h3>
+
+            <p>A = l × w</p>
+
+            <input
+            type="number"
+            id="rectangleLengthA"
+            placeholder="Length">
+
+            <input
+            type="number"
+            id="rectangleWidthA"
+            placeholder="Width">
+
+            <button onclick="rectangleArea()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="rectangleAreaResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Triangle -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-play fa-rotate-270"></i>
+
+            </div>
+
+            <h3>Triangle</h3>
+
+            <p>A = ½ × b × h</p>
+
+            <input
+            type="number"
+            id="triangleBase"
+            placeholder="Base">
+
+            <input
+            type="number"
+            id="triangleHeight"
+            placeholder="Height">
+
+            <button onclick="triangleArea()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="triangleAreaResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Circle -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-regular fa-circle"></i>
+
+            </div>
+
+            <h3>Circle</h3>
+
+            <p>A = πr²</p>
+
+            <input
+            type="number"
+            id="circleRadiusArea"
+            placeholder="Radius">
+
+            <button onclick="circleArea()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="circleAreaResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Trapezoid -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-draw-polygon"></i>
+
+            </div>
+
+            <h3>Trapezoid</h3>
+
+            <p>A = ((a + b) × h) ÷ 2</p>
+
+            <input
+            type="number"
+            id="trapBase1"
+            placeholder="Base 1">
+
+            <input
+            type="number"
+            id="trapBase2"
+            placeholder="Base 2">
+
+            <input
+            type="number"
+            id="trapHeight"
+            placeholder="Height">
+
+            <button onclick="trapezoidArea()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="trapezoidAreaResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CIRCLE TOOLS ================-->
+
+<section class="formula-container">
+
+    <div class="formula-heading">
+
+        <i class="fa-solid fa-circle-dot"></i>
+
+        <h2>Circle Tools</h2>
+
+    </div>
+
+    <div class="formula-grid">
+
+        <!-- Diameter -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-arrows-left-right-to-line"></i>
+
+            </div>
+
+            <h3>Diameter</h3>
+
+            <p>d = 2r</p>
+
+            <input
+            type="number"
+            id="diameterRadius"
+            placeholder="Radius">
+
+            <button onclick="calculateDiameter()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="diameterResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Circumference -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-circle-notch"></i>
+
+            </div>
+
+            <h3>Circumference</h3>
+
+            <p>C = 2πr</p>
+
+            <input
+            type="number"
+            id="circRadius"
+            placeholder="Radius">
+
+            <button onclick="calculateCircumference()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="circumferenceResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Radius -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-bullseye"></i>
+
+            </div>
+
+            <h3>Radius</h3>
+
+            <p>r = d ÷ 2</p>
+
+            <input
+            type="number"
+            id="radiusDiameter"
+            placeholder="Diameter">
+
+            <button onclick="calculateRadius()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="radiusResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ VOLUME ================-->
+
+<section class="formula-container">
+
+    <div class="formula-heading">
+
+        <i class="fa-solid fa-cubes"></i>
+
+        <h2>Volume</h2>
+
+    </div>
+
+    <div class="formula-grid">
+
+        <!-- Cube -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-cube"></i>
+
+            </div>
+
+            <h3>Cube</h3>
+
+            <p>V = s³</p>
+
+            <input
+            type="number"
+            id="cubeSide"
+            placeholder="Side Length">
+
+            <button onclick="calculateCube()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="cubeResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Rectangular Prism -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-box"></i>
+
+            </div>
+
+            <h3>Rectangular Prism</h3>
+
+            <p>V = l × w × h</p>
+
+            <input type="number" id="prismLength" placeholder="Length">
+
+            <input type="number" id="prismWidth" placeholder="Width">
+
+            <input type="number" id="prismHeight" placeholder="Height">
+
+            <button onclick="calculatePrism()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="prismResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Cylinder -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-database"></i>
+
+            </div>
+
+            <h3>Cylinder</h3>
+
+            <p>V = πr²h</p>
+
+            <input type="number" id="cylinderRadius" placeholder="Radius">
+
+            <input type="number" id="cylinderHeight" placeholder="Height">
+
+            <button onclick="calculateCylinder()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="cylinderResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Sphere -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-globe"></i>
+
+            </div>
+
+            <h3>Sphere</h3>
+
+            <p>V = ⁴⁄₃πr³</p>
+
+            <input type="number" id="sphereRadius" placeholder="Radius">
+
+            <button onclick="calculateSphere()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="sphereResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+        <!-- Cone -->
+
+        <div class="formula-card">
+
+            <div class="formula-icon">
+
+                <i class="fa-solid fa-traffic-cone"></i>
+
+            </div>
+
+            <h3>Cone</h3>
+
+            <p>V = ⅓πr²h</p>
+
+            <input type="number" id="coneRadius" placeholder="Radius">
+
+            <input type="number" id="coneHeight" placeholder="Height">
+
+            <button onclick="calculateCone()">
+
+                Calculate
+
+            </button>
+
+            <div
+            class="result"
+            id="coneResult">
+
+                Result
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-bottom">
+
+        © 2026 Math Hub | Designed & Developed by <strong>Euell Dawat</strong>
+
+    </div>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
 
 </html>
-
