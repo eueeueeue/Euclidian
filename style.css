@@ -1775,3 +1775,397 @@ footer{
     margin-top:10px;
 
 }
+
+/*================ BADGES =================*/
+
+.badges{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+.badges span{
+
+    background:linear-gradient(135deg,#31487A,#192338);
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.badges span:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 10px 25px rgba(25,35,56,.35);
+
+}
+
+/*================ ABOUT GRID =================*/
+
+.about-grid{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:0 auto 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:30px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*================ GLASS CARD =================*/
+
+.glass-card{
+
+    background:rgba(255,255,255,.60);
+
+    backdrop-filter:blur(16px);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.18);
+
+}
+
+.glass-card h2{
+
+    color:#192338;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+.glass-card p{
+
+    color:#44546E;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+/*================ SKILLS =================*/
+
+.skill{
+
+    margin-bottom:25px;
+
+}
+
+.skill-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#192338;
+
+}
+
+.skill-bar{
+
+    width:100%;
+
+    height:12px;
+
+    background:#d6e3f5;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.skill-fill{
+
+    height:100%;
+
+    border-radius:30px;
+
+    animation:growBar 2s ease;
+
+}
+
+.html{
+
+    width:95%;
+
+    background:#31487A;
+
+}
+
+.css{
+
+    width:90%;
+
+    background:#4167A8;
+
+}
+
+.js{
+
+    width:80%;
+
+    background:#5A88D4;
+
+}
+
+.responsive{
+
+    width:90%;
+
+    background:#7BA6E6;
+
+}
+
+@keyframes growBar{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+/*================ REFLECTION =================*/
+
+.reflection{
+
+    grid-column:1/-1;
+
+}
+
+/*================ STATISTICS =================*/
+
+.stats{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:linear-gradient(135deg,#31487A,#192338);
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(25,35,56,.25);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stat-card h2{
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    font-size:18px;
+
+    letter-spacing:.5px;
+
+}
+
+/*================ QUOTE =================*/
+
+.developer-quote{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:40px auto 80px;
+
+    text-align:center;
+
+}
+
+.developer-quote h2{
+
+    color:#192338;
+
+    font-size:32px;
+
+    font-style:italic;
+
+    line-height:1.6;
+
+}
+
+/*================ FOOTER =================*/
+
+footer{
+
+    background:#192338;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:900px){
+
+.about-hero h1{
+
+    font-size:50px;
+
+}
+
+.about-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.profile-card{
+
+    width:90%;
+
+}
+
+.glass-card{
+
+    padding:25px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.about-hero{
+
+    padding-top:140px;
+
+}
+
+.about-hero h1{
+
+    font-size:38px;
+
+}
+
+.hero-text{
+
+    font-size:16px;
+
+}
+
+.profile-image img{
+
+    width:150px;
+
+    height:150px;
+
+}
+
+.badges{
+
+    gap:8px;
+
+}
+
+.badges span{
+
+    font-size:12px;
+
+    padding:8px 14px;
+
+}
+
+.stat-card h2{
+
+    font-size:36px;
+
+}
+
+.developer-quote h2{
+
+    font-size:24px;
+
+}
+
+}
