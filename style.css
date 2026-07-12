@@ -409,3 +409,400 @@ transform:translateY(0);
 }
 
 }
+/*========================================
+        FEATURES SECTION
+========================================*/
+
+.features{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.section-title h2{
+
+    font-size:48px;
+
+    color:#192338;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#556B8E;
+
+    margin-bottom:60px;
+
+    font-size:18px;
+
+}
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(49,72,122,.25);
+
+}
+
+.feature-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    color:#192338;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#556B8E;
+
+    line-height:1.8;
+
+}
+
+/*========================================
+        STATISTICS
+========================================*/
+
+.statistics{
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-box{
+
+    background:#31487A;
+
+    color:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-10px);
+
+    background:#192338;
+
+}
+
+.stat-box h2{
+
+    font-size:50px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-box p{
+
+    font-size:18px;
+
+}
+
+/*========================================
+        CALL TO ACTION
+========================================*/
+
+.cta{
+
+    margin:90px auto;
+
+    width:90%;
+
+    max-width:1100px;
+
+    background:linear-gradient(135deg,#31487A,#192338);
+
+    border-radius:35px;
+
+    padding:70px 30px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.cta h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/*========================================
+            FOOTER
+========================================*/
+
+footer{
+
+    background:#192338;
+
+    color:white;
+
+    padding:60px 8% 30px;
+
+    margin-top:100px;
+
+}
+
+.footer-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-content h2{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-content p{
+
+    color:#d9e1f1;
+
+    margin:15px 0;
+
+}
+
+.footer-links{
+
+    margin:30px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.footer-links a:hover{
+
+    color:#8FB3E2;
+
+}
+
+.copyright{
+
+    margin-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    padding-top:20px;
+
+    font-size:15px;
+
+}
+
+/*========================================
+        RESPONSIVE
+========================================*/
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding-top:150px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    margin-top:40px;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+
+}
+
+.cta h2{
+
+    font-size:32px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero-description{
+
+    font-size:16px;
+
+}
+
+.btn-primary,
+
+.btn-secondary{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.cta{
+
+    padding:50px 20px;
+
+}
+
+.cta h2{
+
+    font-size:26px;
+
+}
+
+}
