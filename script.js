@@ -209,3 +209,111 @@ function trapezoidArea(){
     "Area = " + area.toFixed(2);
 
 }
+
+/* ==========================================
+   VOLUME CALCULATORS
+========================================== */
+
+/* Cube */
+
+function cubeVolume(){
+
+    let side = parseFloat(document.getElementById("cubeSide").value);
+
+    if(isNaN(side)){
+
+        document.getElementById("cubeOutput").innerHTML = "Please enter a valid value.";
+        return;
+
+    }
+
+    let volume = side ** 3;
+
+    document.getElementById("cubeOutput").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
+
+/* Cylinder */
+
+function cylinderVolume(){
+
+    let radius = parseFloat(document.getElementById("cylinderRadius").value);
+    let height = parseFloat(document.getElementById("cylinderHeight").value);
+
+    if(isNaN(radius) || isNaN(height)){
+
+        document.getElementById("cylinderOutput").innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    let volume = Math.PI * radius * radius * height;
+
+    document.getElementById("cylinderOutput").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
+
+/* Cone */
+
+function coneVolume(){
+
+    let radius = parseFloat(document.getElementById("coneRadius").value);
+    let height = parseFloat(document.getElementById("coneHeight").value);
+
+    if(isNaN(radius) || isNaN(height)){
+
+        document.getElementById("coneOutput").innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    let volume = (Math.PI * radius * radius * height) / 3;
+
+    document.getElementById("coneOutput").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
+
+/* Sphere */
+
+function sphereVolume(){
+
+    let radius = parseFloat(document.getElementById("sphereRadius").value);
+
+    if(isNaN(radius)){
+
+        document.getElementById("sphereOutput").innerHTML = "Please enter a valid value.";
+        return;
+
+    }
+
+    let volume = (4/3) * Math.PI * radius ** 3;
+
+    document.getElementById("sphereOutput").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
+
+/* Rectangular Prism */
+
+function prismVolume(){
+
+    let length = parseFloat(document.getElementById("prismLength").value);
+    let width = parseFloat(document.getElementById("prismWidth").value);
+    let height = parseFloat(document.getElementById("prismHeight").value);
+
+    if(isNaN(length) || isNaN(width) || isNaN(height)){
+
+        document.getElementById("prismOutput").innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    let volume = length * width * height;
+
+    document.getElementById("prismOutput").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
