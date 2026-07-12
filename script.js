@@ -203,3 +203,69 @@ function calculateTriangleArea(){
     "Area = " + area.toFixed(2);
 
 }
+
+/*=========================================
+        3D SHAPES
+=========================================*/
+
+function calculateCubeVolume(){
+
+    let side = parseFloat(document.getElementById("cubeSide").value);
+
+    if(isNaN(side) || side < 0){
+
+        document.getElementById("cubeResult").innerHTML =
+        "Please enter a valid side.";
+
+        return;
+
+    }
+
+    let volume = side ** 3;
+
+    document.getElementById("cubeResult").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
+
+function calculateCylinderVolume(){
+
+    let r = parseFloat(document.getElementById("cylinderRadius").value);
+
+    let h = parseFloat(document.getElementById("cylinderHeight").value);
+
+    if(isNaN(r) || isNaN(h) || r < 0 || h < 0){
+
+        document.getElementById("cylinderResult").innerHTML =
+        "Please enter valid values.";
+
+        return;
+
+    }
+
+    let volume = Math.PI * r * r * h;
+
+    document.getElementById("cylinderResult").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
+
+function calculateSphereVolume(){
+
+    let r = parseFloat(document.getElementById("sphereRadius").value);
+
+    if(isNaN(r) || r < 0){
+
+        document.getElementById("sphereResult").innerHTML =
+        "Please enter a valid radius.";
+
+        return;
+
+    }
+
+    let volume = (4/3) * Math.PI * r * r * r;
+
+    document.getElementById("sphereResult").innerHTML =
+    "Volume = " + volume.toFixed(2);
+
+}
