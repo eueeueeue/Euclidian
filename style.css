@@ -1315,3 +1315,322 @@ header{
 }
 
 }
+/*==================================================
+                    ABOUT PAGE
+==================================================*/
+
+.about-hero{
+
+    text-align:center;
+
+    padding:150px 8% 80px;
+
+}
+
+.about-hero h4{
+
+    color:var(--primary);
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.about-hero h1{
+
+    font-size:54px;
+
+    color:var(--secondary);
+
+    margin-bottom:15px;
+
+}
+
+.about-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/*==================================================
+                DEVELOPER CARD
+==================================================*/
+
+.developer-card{
+
+    max-width:1100px;
+
+    margin:0 auto 80px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.developer-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.developer-image img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid var(--accent);
+
+}
+
+.developer-info{
+
+    flex:2;
+
+}
+
+.developer-info h2{
+
+    font-size:36px;
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+.developer-info h4{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.developer-info p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+                MISSION & VISION
+==================================================*/
+
+.about-grid{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.about-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-card i{
+
+    font-size:50px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.about-card h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.about-card p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+}
+
+/*==================================================
+                PROJECT SECTION
+==================================================*/
+
+.project-section{
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.project-section h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:var(--secondary);
+
+}
+
+.project-section p{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+                REFLECTION
+==================================================*/
+
+.reflection{
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+}
+
+.reflection h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.reflection p{
+
+    text-align:center;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:900px){
+
+.developer-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.about-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.about-hero h1{
+
+    font-size:40px;
+
+}
+
+.developer-image img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.project-section,
+
+.reflection{
+
+    padding:30px;
+
+}
+
+}
