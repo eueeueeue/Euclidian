@@ -1013,67 +1013,76 @@ header{
 }
 
 }
-
 /*==================================================
-                FORMULAS PAGE
+                FORMULA PAGE
 ==================================================*/
 
 .formula-hero{
 
-    text-align:center;
+    padding:170px 8% 70px;
 
-    padding:150px 8% 60px;
+    text-align:center;
 
 }
 
 .formula-hero h4{
 
-    color:var(--primary);
+    color:#31487A;
 
     letter-spacing:3px;
 
     margin-bottom:10px;
 
+    font-weight:600;
+
 }
 
 .formula-hero h1{
 
-    font-size:52px;
+    font-size:60px;
 
-    color:var(--secondary);
+    color:#192338;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
 
 }
 
 .formula-hero p{
 
-    color:var(--gray);
+    max-width:700px;
+
+    margin:auto;
+
+    color:#556B8E;
+
+    line-height:1.8;
 
     font-size:18px;
 
 }
 
 /*==================================================
-            FORMULA GRID
+                FORMULA GRID
 ==================================================*/
 
 .formula-grid{
 
-    max-width:1200px;
+    width:90%;
 
-    margin:auto;
+    max-width:1300px;
+
+    margin:0 auto 100px;
 
     display:grid;
 
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-    gap:30px;
+    gap:35px;
 
 }
 
 /*==================================================
-            SECTION TITLES
+            SECTION TITLE
 ==================================================*/
 
 .formula-section-title{
@@ -1084,17 +1093,21 @@ header{
 
     align-items:center;
 
-    gap:15px;
+    gap:18px;
+
+    background:linear-gradient(135deg,#31487A,#192338);
+
+    color:white;
 
     padding:20px 30px;
 
     border-radius:20px;
 
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    margin-top:20px;
 
-    color:white;
+    margin-bottom:10px;
 
-    margin:20px 0;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 
 }
 
@@ -1111,48 +1124,48 @@ header{
 }
 
 /*==================================================
-            FORMULA CARD
+                FORMULA CARD
 ==================================================*/
 
 .formula-card{
 
     background:white;
 
-    border-radius:25px;
+    border-radius:30px;
 
-    padding:30px;
+    padding:35px;
 
     text-align:center;
 
     box-shadow:0 15px 35px rgba(0,0,0,.08);
 
-    transition:0.35s;
+    transition:.35s ease;
 
 }
 
 .formula-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
-    box-shadow:0 20px 45px rgba(49,72,122,.18);
+    box-shadow:0 20px 40px rgba(49,72,122,.18);
 
 }
 
 /*==================================================
-            FORMULA ICON
+                ICON
 ==================================================*/
 
 .formula-icon{
 
-    width:80px;
+    width:90px;
 
-    height:80px;
+    height:90px;
 
-    margin:auto auto 20px;
+    margin:auto;
+
+    margin-bottom:25px;
 
     border-radius:50%;
-
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
     display:flex;
 
@@ -1160,15 +1173,21 @@ header{
 
     align-items:center;
 
+    background:linear-gradient(135deg,#31487A,#192338);
+
     color:white;
 
-    font-size:34px;
+    font-size:38px;
 
 }
 
+/*==================================================
+                TEXT
+==================================================*/
+
 .formula-card h2{
 
-    color:var(--secondary);
+    color:#192338;
 
     margin-bottom:10px;
 
@@ -1176,17 +1195,17 @@ header{
 
 .formula-card h3{
 
-    color:var(--primary);
+    color:#31487A;
 
     margin-bottom:15px;
 
-    font-size:24px;
+    font-size:25px;
 
 }
 
 .formula-card p{
 
-    color:var(--gray);
+    color:#556B8E;
 
     margin-bottom:20px;
 
@@ -1220,7 +1239,7 @@ header{
 
 .formula-card input:focus{
 
-    border-color:var(--primary);
+    border-color:#31487A;
 
 }
 
@@ -1238,11 +1257,11 @@ header{
 
     border-radius:15px;
 
-    background:var(--primary);
+    background:#31487A;
 
     color:white;
 
-    font-size:16px;
+    font-size:17px;
 
     font-weight:600;
 
@@ -1254,7 +1273,7 @@ header{
 
 .formula-card button:hover{
 
-    background:var(--secondary);
+    background:#192338;
 
     transform:translateY(-3px);
 
@@ -1268,17 +1287,13 @@ header{
 
     margin-top:20px;
 
-    background:var(--light);
+    background:#EEF4FF;
 
     border-radius:15px;
 
-    padding:15px;
+    padding:18px;
 
-    color:var(--secondary);
-
-    font-weight:600;
-
-    min-height:55px;
+    min-height:60px;
 
     display:flex;
 
@@ -1286,11 +1301,25 @@ header{
 
     align-items:center;
 
+    color:#192338;
+
+    font-weight:600;
+
 }
 
 /*==================================================
-            RESPONSIVE
+                RESPONSIVE
 ==================================================*/
+
+@media(max-width:900px){
+
+.formula-hero h1{
+
+    font-size:45px;
+
+}
+
+}
 
 @media(max-width:768px){
 
@@ -1300,17 +1329,33 @@ header{
 
 }
 
-.formula-hero h1{
-
-    font-size:40px;
-
-}
-
 .formula-section-title{
 
     justify-content:center;
 
     text-align:center;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.formula-hero{
+
+    padding-top:140px;
+
+}
+
+.formula-hero h1{
+
+    font-size:36px;
+
+}
+
+.formula-card{
+
+    padding:25px;
 
 }
 
