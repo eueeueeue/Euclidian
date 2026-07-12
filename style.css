@@ -1043,3 +1043,45 @@ Calculator Tips
 }
 
 }
+
+/*=========================================
+        FORMULA SECTION TITLES
+=========================================*/
+
+.formula-section-title{
+
+    grid-column:1/-1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:20px 0 10px;
+
+    padding:18px 25px;
+
+    background:linear-gradient(135deg,#31487A,#192338);
+
+    color:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.formula-section-title i{
+
+    font-size:30px;
+
+}
+
+.formula-section-title h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
