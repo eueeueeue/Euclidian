@@ -406,9 +406,131 @@
 
 </section>
 
-<!-- PERIMETER SECTION -->
-<!-- We'll add this next -->
+<!--================ PERIMETER SECTION ================-->
 
+<section id="perimeter" class="formula-section">
+
+    <h2>📏 Perimeter Calculators</h2>
+
+    <p class="section-description">
+
+        Calculate the perimeter or circumference of different geometric figures.
+
+    </p>
+
+    <div class="formula-grid">
+
+        <!-- Rectangle -->
+
+        <div class="formula-card">
+
+            <h3>Rectangle</h3>
+
+            <p><strong>Formula:</strong> P = 2(l + w)</p>
+
+            <input type="number" id="prectLength" placeholder="Length">
+
+            <input type="number" id="prectWidth" placeholder="Width">
+
+            <button onclick="rectanglePerimeter()">Solve</button>
+
+            <div class="output" id="prectOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Square -->
+
+        <div class="formula-card">
+
+            <h3>Square</h3>
+
+            <p><strong>Formula:</strong> P = 4s</p>
+
+            <input type="number" id="psquareSide" placeholder="Side Length">
+
+            <button onclick="squarePerimeter()">Solve</button>
+
+            <div class="output" id="psquareOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Triangle -->
+
+        <div class="formula-card">
+
+            <h3>Triangle</h3>
+
+            <p><strong>Formula:</strong> P = a + b + c</p>
+
+            <input type="number" id="sideA" placeholder="Side A">
+
+            <input type="number" id="sideB" placeholder="Side B">
+
+            <input type="number" id="sideC" placeholder="Side C">
+
+            <button onclick="trianglePerimeter()">Solve</button>
+
+            <div class="output" id="trianglePerimeterOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Circle -->
+
+        <div class="formula-card">
+
+            <h3>Circle (Circumference)</h3>
+
+            <p><strong>Formula:</strong> C = 2πr</p>
+
+            <input type="number" id="circlePerimeterRadius" placeholder="Radius">
+
+            <button onclick="circlePerimeter()">Solve</button>
+
+            <div class="output" id="circlePerimeterOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Parallelogram -->
+
+        <div class="formula-card">
+
+            <h3>Parallelogram</h3>
+
+            <p><strong>Formula:</strong> P = 2(a+b)</p>
+
+            <input type="number" id="paraSide1" placeholder="Base">
+
+            <input type="number" id="paraSide2" placeholder="Side">
+
+            <button onclick="parallelogramPerimeter()">Solve</button>
+
+            <div class="output" id="paraPerimeterOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <footer>
 
     <p>
