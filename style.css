@@ -1478,3 +1478,300 @@ footer{
 
 }
 
+/*==================================================
+                ABOUT PAGE
+==================================================*/
+
+.about-page{
+
+    background: linear-gradient(135deg,#dfefff,#bdd7ff,#8fb3e2);
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+}
+
+/*================ FLOATING SYMBOLS ================*/
+
+.floating-symbols{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:0;
+
+}
+
+.floating-symbols span{
+
+    position:absolute;
+
+    color:rgba(25,35,56,.08);
+
+    font-size:70px;
+
+    font-weight:bold;
+
+    animation:floatSymbol 12s linear infinite;
+
+}
+
+.floating-symbols span:nth-child(1){
+
+    left:8%;
+
+    top:12%;
+
+}
+
+.floating-symbols span:nth-child(2){
+
+    right:10%;
+
+    top:20%;
+
+    animation-duration:15s;
+
+}
+
+.floating-symbols span:nth-child(3){
+
+    left:15%;
+
+    bottom:15%;
+
+    animation-duration:18s;
+
+}
+
+.floating-symbols span:nth-child(4){
+
+    right:18%;
+
+    bottom:20%;
+
+    animation-duration:14s;
+
+}
+
+.floating-symbols span:nth-child(5){
+
+    left:45%;
+
+    top:40%;
+
+    animation-duration:20s;
+
+}
+
+.floating-symbols span:nth-child(6){
+
+    left:70%;
+
+    top:65%;
+
+}
+
+.floating-symbols span:nth-child(7){
+
+    left:35%;
+
+    top:75%;
+
+}
+
+.floating-symbols span:nth-child(8){
+
+    right:30%;
+
+    top:8%;
+
+}
+
+@keyframes floatSymbol{
+
+    0%{
+
+        transform:translateY(0px) rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-30px) rotate(15deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0px) rotate(0deg);
+
+    }
+
+}
+
+/*================ HERO =================*/
+
+.about-hero{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    padding:170px 20px 80px;
+
+}
+
+.small-title{
+
+    color:#31487A;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.about-hero h1{
+
+    font-size:70px;
+
+    color:#192338;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.about-hero h1 span{
+
+    color:#31487A;
+
+}
+
+.hero-text{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#4f6486;
+
+    font-size:18px;
+
+}
+
+/*================ PROFILE =================*/
+
+.profile-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:70px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.profile-card{
+
+    width:380px;
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:35px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.profile-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.profile-image img{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #31487A;
+
+    box-shadow:0 0 35px rgba(49,72,122,.30);
+
+    transition:.4s;
+
+}
+
+.profile-image img:hover{
+
+    transform:scale(1.08);
+
+}
+
+.profile-card h2{
+
+    margin-top:20px;
+
+    color:#192338;
+
+    font-size:30px;
+
+}
+
+.grade{
+
+    color:#31487A;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+}
+
+.school{
+
+    color:#556B8E;
+
+    margin-top:10px;
+
+}
