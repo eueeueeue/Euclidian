@@ -515,3 +515,39 @@ hoverItems.forEach(item=>{
     });
 
 });
+
+const cards = document.querySelectorAll(
+".feature-card, .stat-box, .glass-card"
+);
+
+const cardObserver = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},
+
+{
+
+threshold:.2
+
+}
+
+);
+
+cards.forEach((card,index)=>{
+
+card.style.transitionDelay = `${index * 0.15}s`;
+
+cardObserver.observe(card);
+
+});
