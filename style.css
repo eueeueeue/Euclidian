@@ -944,3 +944,24 @@ button:hover ~ .cursor{
     transform:translateY(0);
 
 }
+.feature-card,
+.stat-box,
+.glass-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.feature-card.show,
+.stat-box.show,
+.glass-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
