@@ -424,3 +424,49 @@ function parallelogramPerimeter(){
     "Perimeter = " + perimeter.toFixed(2);
 
 }
+
+/*==============================
+    BACK TO TOP BUTTON
+==============================*/
+
+let topButton = document.getElementById("topBtn");
+
+window.onscroll = function () {
+
+    scrollFunction();
+
+};
+
+function scrollFunction() {
+
+    if (
+
+        document.body.scrollTop > 300 ||
+
+        document.documentElement.scrollTop > 300
+
+    ) {
+
+        topButton.style.display = "block";
+
+    }
+
+    else {
+
+        topButton.style.display = "none";
+
+    }
+
+}
+
+function topFunction() {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
