@@ -575,3 +575,213 @@ footer{
     color:#D9E1F1;
 
 }
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Math Hub | Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="img/logo.png">
+
+<h2>Math Hub</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="calculator.html" class="active">Calculator</a></li>
+
+<li><a href="formulas.html">Formulas</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!--================ HERO =================-->
+
+<section class="calculator-hero">
+
+<div class="calculator-title">
+
+<h4>SMART CALCULATOR</h4>
+
+<h1>Simple Calculator</h1>
+
+<p>
+
+Perform basic mathematical operations quickly and accurately.
+
+</p>
+
+</div>
+
+</section>
+
+<!--================ CALCULATOR =================-->
+
+<section class="calculator-section">
+
+<div class="calculator-card">
+
+<input
+type="text"
+id="display"
+readonly>
+
+<div class="calculator-buttons">
+
+<button onclick="clearDisplay()"
+class="operator">
+
+AC
+
+</button>
+
+<button onclick="deleteLast()"
+class="operator">
+
+⌫
+
+</button>
+
+<button onclick="append('%')"
+class="operator">
+
+%
+
+</button>
+
+<button onclick="append('/')"
+class="operator">
+
+÷
+
+</button>
+
+<button onclick="append('7')">7</button>
+
+<button onclick="append('8')">8</button>
+
+<button onclick="append('9')">9</button>
+
+<button onclick="append('*')"
+class="operator">
+
+×
+
+</button>
+
+<button onclick="append('4')">4</button>
+
+<button onclick="append('5')">5</button>
+
+<button onclick="append('6')">6</button>
+
+<button onclick="append('-')"
+class="operator">
+
+−
+
+</button>
+
+<button onclick="append('1')">1</button>
+
+<button onclick="append('2')">2</button>
+
+<button onclick="append('3')">3</button>
+
+<button onclick="append('+')"
+class="operator">
+
++
+
+</button>
+
+<button onclick="append('0')">0</button>
+
+<button onclick="append('.')">.</button>
+
+<button onclick="calculate()"
+class="equal">
+
+=
+
+</button>
+
+</div>
+
+</div>
+
+<div class="tips-card">
+
+<h2>
+
+<i class="fa-solid fa-lightbulb"></i>
+
+Calculator Tips
+
+</h2>
+
+<ul>
+
+<li>✔ Addition</li>
+
+<li>✔ Subtraction</li>
+
+<li>✔ Multiplication</li>
+
+<li>✔ Division</li>
+
+<li>✔ Percentage</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
