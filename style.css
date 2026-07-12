@@ -922,3 +922,25 @@ button:hover ~ .cursor{
     transform:translate(-50%,-50%) scale(1.5);
 
 }
+
+/*========================================
+        SCROLL REVEAL
+========================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
