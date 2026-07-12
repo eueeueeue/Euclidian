@@ -317,3 +317,110 @@ function prismVolume(){
     "Volume = " + volume.toFixed(2);
 
 }
+/* ==========================================
+   PERIMETER CALCULATORS
+========================================== */
+
+/* Rectangle */
+
+function rectanglePerimeter(){
+
+    let length = parseFloat(document.getElementById("prectLength").value);
+    let width = parseFloat(document.getElementById("prectWidth").value);
+
+    if(isNaN(length) || isNaN(width)){
+
+        document.getElementById("prectOutput").innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    let perimeter = 2 * (length + width);
+
+    document.getElementById("prectOutput").innerHTML =
+    "Perimeter = " + perimeter.toFixed(2);
+
+}
+
+/* Square */
+
+function squarePerimeter(){
+
+    let side = parseFloat(document.getElementById("psquareSide").value);
+
+    if(isNaN(side)){
+
+        document.getElementById("psquareOutput").innerHTML = "Please enter a valid value.";
+        return;
+
+    }
+
+    let perimeter = 4 * side;
+
+    document.getElementById("psquareOutput").innerHTML =
+    "Perimeter = " + perimeter.toFixed(2);
+
+}
+
+/* Triangle */
+
+function trianglePerimeter(){
+
+    let a = parseFloat(document.getElementById("sideA").value);
+    let b = parseFloat(document.getElementById("sideB").value);
+    let c = parseFloat(document.getElementById("sideC").value);
+
+    if(isNaN(a) || isNaN(b) || isNaN(c)){
+
+        document.getElementById("trianglePerimeterOutput").innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    let perimeter = a + b + c;
+
+    document.getElementById("trianglePerimeterOutput").innerHTML =
+    "Perimeter = " + perimeter.toFixed(2);
+
+}
+
+/* Circle */
+
+function circlePerimeter(){
+
+    let radius = parseFloat(document.getElementById("circlePerimeterRadius").value);
+
+    if(isNaN(radius)){
+
+        document.getElementById("circlePerimeterOutput").innerHTML = "Please enter a valid value.";
+        return;
+
+    }
+
+    let circumference = 2 * Math.PI * radius;
+
+    document.getElementById("circlePerimeterOutput").innerHTML =
+    "Circumference = " + circumference.toFixed(2);
+
+}
+
+/* Parallelogram */
+
+function parallelogramPerimeter(){
+
+    let base = parseFloat(document.getElementById("paraSide1").value);
+    let side = parseFloat(document.getElementById("paraSide2").value);
+
+    if(isNaN(base) || isNaN(side)){
+
+        document.getElementById("paraPerimeterOutput").innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    let perimeter = 2 * (base + side);
+
+    document.getElementById("paraPerimeterOutput").innerHTML =
+    "Perimeter = " + perimeter.toFixed(2);
+
+}
